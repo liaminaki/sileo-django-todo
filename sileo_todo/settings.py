@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'todo',
+    'sileo',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -80,6 +81,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+SILEO_API_FALLBACK_VERSION = 'v1'
+SILEO_ALLOWED_VERSIONS = ['v1', 'v2', 'v3']
+API_MIDDLEWARE = []
 
 
 # Password validation
