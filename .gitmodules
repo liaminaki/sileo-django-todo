@@ -1,0 +1,3 @@
+[submodule "sileo"]
+	path = sileo
+	url = https://forge.bposeats.com/channelfix/sileo
