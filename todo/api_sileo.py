@@ -8,7 +8,7 @@ from .forms import TodoForm
 class TodoResource(Resource):
 
     query_set = Todo.objects.filter(removed=False)
-    fields = ('label', 'pk', 'done', 'todo_uuid')
+    fields = ('label', 'id', 'done', 'todo_uuid')
     allowed_methods = ('filter','get_pk', 'create', 'delete','update')
     form_class = TodoForm
     delete_filter_fields = ['pk']
